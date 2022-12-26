@@ -1,0 +1,14 @@
+{
+  "name": "p3_oc",
+  "version": "1.0.0",
+  "description": "Projet OMF",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  },
+  "scripts": {
+    "sass": "sass --watch style.scss style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
