@@ -10,6 +10,6 @@ __Compétences évaluées :__
 2. Permettre la réservation en ligne et la composition de menus.  
 
 ## Livrables    
-Pages à intégrer :
+__Pages à intégrer :__
 Pages d'accueil
 Pages de menu (4 au total)
