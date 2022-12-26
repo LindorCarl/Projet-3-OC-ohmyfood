@@ -6,6 +6,7 @@ __Compétences évaluées :__
 * Mettre en place une structure de navigation pour un site web  
 
 ## Objectifs
-Développer un site proposant le menu de 4 grands restaurants parisiens.
-Permettre la réservation en ligne et la composition de menus.
-Livrables
+1. Développer un site proposant le menu de 4 grands restaurants parisiens.
+2. Permettre la réservation en ligne et la composition de menus.  
+
+## Livrables
