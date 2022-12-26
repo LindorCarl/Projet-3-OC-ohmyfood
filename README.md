@@ -14,7 +14,7 @@ __Pages à intégrer :__
 * Pages d'accueil
 * Pages de menu (4 au total)  
 
-__Animations__  
+__Animations :__  
 
 __Boutons__  
 * Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
