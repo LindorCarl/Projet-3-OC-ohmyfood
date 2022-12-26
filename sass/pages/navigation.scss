@@ -1,0 +1,219 @@
+.head {
+    @include relative;
+    &_arrow {
+        @include absolute;
+        &:hover &--color {
+            opacity: 0;
+            transition: all 0.3s;
+            transform: translateX(-25px);
+        }
+        &:hover &--colorfull {
+            opacity: 1;
+            animation: strillé 0.3s linear; 
+        }
+        &--color {
+            color: $black;
+            @include arrowsize;
+        }
+        &--colorfull {
+            @include arrowsize;
+            background: linear-gradient(90deg, $pink 40%, $violet 75%);
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            opacity: 0;
+        }
+    }
+    
+}
+
+.palette_img {
+    @include width;
+    object-fit: cover;
+    height: 400px;
+}
+
+.menu {
+    background-color: $lightgray;
+    width: 85%;
+    margin: auto;
+    border-radius: 40px 40px 0 0;
+    transform:translateY(-100px) ;
+    margin-bottom: -100px;
+    height: 570px;
+    @include relative;
+    @media screen and (max-width: 1115px) {
+        @include width;
+    }
+    @media screen and (max-width: 1034px) {
+        height: 1280px;
+    }
+    &_modif {
+        height: 650px;
+        @media screen and (max-width: 1034px) {
+            height: 1365px;
+        }
+    }
+    &_titre {
+        padding: 30px 0 0 0;
+        font-family: "Shrikhand", cursive;
+        font-weight: 300;
+        margin: 0;
+        text-indent: 1.75%;
+        font-size: 1.7rem;
+        @include width;
+        @media screen and (max-width: 1034px) {
+            text-indent: 2.5%;
+        }
+    }
+    &_coeur {
+       @include absolute;
+       right: 0;
+       top: 90px;
+    }
+    &_bloc {
+        @include flex-around;
+        width: 100%;
+        @media screen and (max-width: 1034px) {
+            display: block;
+        }
+        &--modif {
+            height: 435px;
+            @media screen and (max-width: 1034px) {
+                height: 295px;
+            }
+        }
+        &_case {
+            width: 30%;
+            @media screen and (max-width: 1034px) {
+                width: 95%;
+                margin: auto;
+                margin-bottom: 60px;
+            }
+        }
+        &_tittle {
+            font-weight: 400;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 40px 0 24px 0;
+            &:hover .menu_bloc_tittlebar {
+                animation: descend 0.4s ease-out;
+            }
+            @media screen and (max-width: 1034px) {
+                &:hover .menu_bloc_tittlebar {
+                    animation: rétréci 0.4s linear;
+                }
+            }
+        }
+        &_tittlebar {
+            height: 4px;
+            display: block;
+            background-color: #99e2D0;
+            margin-top: 5px;
+            width: 50px;
+            transform-origin: 0%;
+        } 
+        &_platprix {
+            @include shadow;
+            @include width;
+            border-radius: 15px;
+            padding-left: 10px;
+            @include flex-between;
+            overflow: hidden;
+            margin-bottom: 15px;
+            background-color: $white;
+            cursor: pointer;
+            animation: flou 1s both, colle 1s ease-in-out forwards;
+            &:hover .menu_bloc_prix {
+                margin-right: 0;
+            }
+            &:hover .menu_bloc_checkimg {
+                animation: defile 0.5s ease-in-out;
+            }
+        }
+
+        /* ANIMATION BLOC MENU */
+        
+        &_animation {
+            animation-delay: 0.1s;
+        }
+        &_animation2 {
+            animation-delay: 0.2s;
+        }
+        &_animation3 {
+            animation-delay: 0.3s;
+        }
+        &_animation4 {
+            animation-delay: 0.4s;
+        }
+        &_animation5 {
+            animation-delay: 0.5s;
+        }
+        &_animation6 {
+            animation-delay: 0.6s;
+        }
+        &_animation7 {
+            animation-delay: 0.7s;
+        }
+        &_animation8 {
+            animation-delay: 0.8s;
+        }
+        &_animation9 {
+            animation-delay: 0.9s; 
+        }
+        &_plat {
+            @include ellipsis;
+        }
+        &_titre {
+            margin: 0;
+            padding-top: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            @include ellipsis;
+        }
+        &_prix {
+            @include flex-between;
+            margin-right:-66px;
+            transition: all 0.5s linear;
+        }
+        &_soustitre {
+            margin-top: 3px;
+            font-size: 15px;
+            font-weight: 350;
+            @include ellipsis;
+        }
+        &_chiffre {
+            font-size: 15px;
+            font-weight: 700;
+            height: 69px;
+            padding-bottom: 15px;
+        }
+        &_texte {
+            margin: 0;
+            padding-right: 20px;
+            padding-left: 7px;
+            height: 100%;
+            @include flex-end;
+        }
+        &_check {
+            width: 65px;
+            height: 70px;
+            background-color: #99E2D0;
+            border-radius: 0 15px 15px 0;
+            @include flex-center;
+        }
+        &_checkimg {
+            font-size: 22px;
+            color: $white;
+            @include width;
+            text-align: center;
+        }
+        &_bouton {
+            margin-top: 40px;
+        }
+        &_boutonmarge {
+            width: 185px;
+        }
+    }    
+}

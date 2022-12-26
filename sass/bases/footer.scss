@@ -1,0 +1,109 @@
+.pied {
+    width: 100%;
+    height: 200px;
+    background-color: #363636;
+    display: inline-block;
+    a {
+        text-decoration: none;
+    }
+    @media screen and (max-width: 1034px) {
+        @include width;
+        height: 250px;
+    }
+    &_img {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-left: 7.4%;
+        margin-bottom: 20px;
+        font-family: "Shrikhand", cursive;
+        font-weight: 500;
+        color: $white;
+        text-decoration: none;
+        @media screen and (max-width: 1115px) {
+            width: 90%;
+        }
+        @media screen and (max-width: 1034px) {
+            font-size: 20px;
+            @include width;
+            @include inline;
+            margin-left: 0;
+            padding: 0 60px;
+        }
+    }
+    &_infos {
+        @include flex-around;
+        width: 100%;
+        color: $white;
+        @media screen and (max-width: 1115px) {
+            @include width;
+            padding-right: 10%;
+        }
+        @media screen and (max-width: 1034px) {
+            display: block;
+            @include width;
+            padding: 0 60px;
+        }
+        &--lien {
+            @include flex-around;
+            width: 16%;
+            @media screen and (max-width: 1115px) {
+                @include center;
+            }
+            @media screen and (max-width: 1034px) {
+                @include width;
+                @include inline;
+                height: 35px;
+                margin-right: 0;
+            }
+        }
+        &--lien2 {
+            @include flex-around;
+            width: 13%;
+            @media screen and (max-width: 1115px) {
+                @include center;
+                padding-right: 70px;
+            }
+            @media screen and (max-width: 1034px) {
+                @include width;
+                @include inline; 
+                height: 30px;
+            }
+        }
+        &--texte {
+            color: $white;
+            &:hover {
+                cursor: pointer;
+                text-decoration: 2px underline white;
+            }
+        }
+        @media screen and (max-width: 1115px) {
+            &--marge {
+                padding-right: 80px;
+            }
+        }
+        @media screen and (max-width: 1115px) {
+            &--modif {
+                margin-right: 10px;
+                margin-left: 25px;
+            }
+        }
+        @media screen and (max-width: 1034px) {
+            &--icon {
+                margin-right: 15px;
+            }
+        }
+        @media screen and (max-width: 1034px) {
+            &--modif {
+                width: 1%;
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+        @media screen and (max-width: 1034px) {
+            &--marge {
+                margin: 0;
+                padding-top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,349 @@
+/* ANIMATION LOAD */
+
+@keyframes spinner {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+
+    70% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes spinnerborder {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    70% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+/* ANIMATION BOUTON */
+
+@keyframes mou {
+    10% {
+        transform: scale3d(0.93, 0.93, 1);
+    }
+    40% {
+        transform: scale3d(1, 1, 1);
+    }
+    80% {
+        transform: scale3d(0.97, 0.97, 1);
+    }
+    100% {
+        transform: scale3d(0.98, 0.98, 1);
+    }
+}
+
+/* ANIMATION NUMERO TOURNE */
+
+@keyframes tourne {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-90deg);
+    }
+
+    20% {
+        transform: rotate(-40deg);
+    }
+
+    30% {
+        transform: rotate(180deg);
+    }
+
+    40% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(540deg);
+    }
+
+    60% {
+        transform: rotate(720deg);
+    }
+
+    70% {
+        transform: rotate(780deg);
+    }
+
+    80% {
+        transform: rotate(690deg);
+    }
+
+    90% {
+        transform: rotate(730deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+/* ANIMATION NUMERO CLIC NAV */
+
+@keyframes clic {
+    10% {
+        transform: scale3d(0.975, 0.975, 1);
+    }
+
+    50% {
+        transform: scale3d(0.975, 0.975, 1);
+    }
+
+    100% {
+        transform: scale3d(0.99, 0.99, 1);
+    }
+}
+
+/* ANIMATION NUMERO TOMBE NAV */
+
+@keyframes tombe {
+    5% {
+        transform: rotateZ(40deg);
+    }
+
+    10% {
+        transform: rotateZ(110deg);
+    }
+
+    15% {
+        transform: rotateZ(85deg);
+    }
+
+    20% {
+        transform: rotateZ(93deg);
+    }
+
+    30% {
+        transform: rotateZ(90deg);
+    }
+
+    40% {
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateZ(75deg);
+    }
+
+    60% {
+        transform: rotateZ(60deg);
+    }
+
+    70% {
+        transform: rotateZ(45deg);
+    }
+
+    80% {
+        transform: rotateZ(30deg);
+    }
+
+    90% {
+        transform: rotateZ(15deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+/* ANIMATION NUMERO TOMBE NAV */
+
+@keyframes efface {
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ANIMATION COEUR */
+
+@keyframes grandi-bat {
+    0% {
+        transform: scale3d(0, 0, 1)
+    }
+
+    33% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    38% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    43% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    48% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    53% {
+        transform: scale3d(1.4, 1.4, 1);
+    }
+
+    58% {
+        transform: scale3d(1.05, 1.05, 1);
+    }
+
+    63% {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+
+    68% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    73% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    78% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    83% {
+        transform: scale3d(1.4, 1.4, 1);
+    }
+
+    88% {
+        transform: scale3d(1.05, 1.05, 1);
+    }
+
+    95% {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+
+    100% {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+}
+
+/* ANIMATION ARROWHEAD */
+
+@keyframes strillé {
+    0% {
+        background-size: 0% 100%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+
+/* ANIMATION BARRE-TITRE */
+
+@keyframes descend {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(7px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ANIMATION FLOU-MENU-DEFILE */
+
+@keyframes flou {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes colle {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ANIMATION CHECK-DEFILE */
+
+@keyframes defile {
+    0% {
+        transform: rotate(-270deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* ANIMATION BARRE-TEXTE-BOUGE */
+
+@keyframes rétréci {
+    0% {
+        transform:  scaleX(0.5);
+    }
+
+    20% {
+        transform: scaleX(0.3);
+    }
+
+    40% {
+        transform: scaleX(0.55);
+    }
+
+    60% {
+        transform: scaleX(0.42);
+    }
+
+    80% {
+        transform: scaleX(0.55);
+    }
+
+    100% {
+        transform: scaleX(0.5);
+    }
+}
+
+
+

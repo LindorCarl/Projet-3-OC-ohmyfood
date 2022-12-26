@@ -1,0 +1,19 @@
+.spinner {
+    background-color: $white;
+    @include flex-center;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    inset: 0px;
+    @include hidden;
+    animation: spinner 3s linear;
+    &_border  {
+        border-right: 5px solid transparent;
+        border-top: 5px solid #da96eb;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        animation: spinnerborder 3s linear;
+        @include hidden;
+    }
+}

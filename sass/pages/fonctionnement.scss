@@ -1,0 +1,87 @@
+.fonctionnement {
+    width: 100%;
+    height: 230px;
+    .function {
+        @include marge;
+    }
+    @media screen and (max-width: 1034px) {
+        height: 400px;
+    }
+    .bouton {
+        @include flex-around;
+        width: 100%;
+        margin-top: 30px;
+        @media screen and (max-width: 1034px) {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        &_bis {
+            @include flex-around;
+            width: 25%;
+            background-color: #fafafa;
+            border-radius: 22px;
+            height: 75px;
+            @include box-shadow;
+            &:hover {
+                cursor: pointer;
+                @include mou;
+                background-color: #f2ebfa;
+                .bouton_chiffre {
+                    @include tourne;
+                }
+                .bouton_icon{
+                    color: $violet;
+                }
+            } 
+            @media screen and (max-width: 1115px) {
+                position: relative;
+                width: 25%;
+            }
+            @media screen and (max-width: 1034px) {
+                width: 87%;
+                margin-bottom: 20px;
+            }
+        } 
+    
+        &_chiffre {
+            border-radius: 13px;
+            background-color: #9356DC;
+            color: white;
+            height: 26px;
+            width: 26px;
+            text-align: center;
+            padding-top: 4px;
+            padding-right: 2px;
+            font-weight: 500;
+            margin-left: -15px;
+            @media screen and (max-width: 1115px) {
+                position: absolute;
+                left: 1%;
+            }
+            @media screen and (max-width: 1034px) {
+                left: 2px;
+            }
+        }
+            
+        &_icon {
+            padding-right: 10px;
+            padding-left: 10px;
+            color: gray;
+            @media screen and (max-width: 1115px) {
+                margin: 0 20px;
+            }
+        }
+    
+        &_texte {
+            padding-right: 100px;
+            font-weight: 500;
+            @media screen and (max-width: 1115px) {
+                width: 100%;
+                padding-right: 0;
+                text-align: start;
+            }
+        }
+    }
+}
+
+

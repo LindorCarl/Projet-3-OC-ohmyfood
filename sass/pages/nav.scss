@@ -1,0 +1,113 @@
+.nav {
+    @include width;
+    height: 700px;
+    background-color: $lightgray;
+    display: inline-block;
+    @media screen and (max-width: 1034px) {
+        @include width;
+        height: 1200px;
+    }
+    &_titre {
+        @include marge;
+    }
+    &_main {
+        @include flex-evenly;
+        @include width;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &--bouton {
+            width: 44%;
+            height: 250px;
+            @include box-shadow;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            @include relative;
+            &:hover {
+                animation: clic 2s ease-in;
+                @include pointer;
+                .nav_main--nouveau {
+                    animation: tombe 2s linear;
+                    @include pointer;
+                    z-index: 1;
+                    transform-origin: top left;
+                }
+            }
+            @media screen and (max-width: 1115px) {  
+                @include relative;
+            }
+            @media screen and (max-width: 1034px) {
+                width: 87%;
+            }
+        }
+            &--lien {
+                text-decoration: none;
+                color: $black;
+            }
+            &--nouveau {
+                @include absolute;
+                color: #278870;
+                background-color: #99E2D0;
+                padding: 5px 15px 5px 15px;
+                border-radius: 2px;
+                width: 90px;
+                margin-left: 470px;
+                margin-top: 12px;
+                font-size: 15px;
+                font-weight: 500;
+                @media screen and (max-width: 1115px) {  
+                    @include absolute;
+                    right: 10px;
+                } 
+            }
+            &--image {
+                @include width;
+                height: 175px;
+                object-fit: cover;
+                border-radius: 20px 20px 0 0;
+            }
+        
+        &--description {
+            @include flex-between;
+            height: 70px;
+        }
+            &--texte {
+                font-size: 12px;
+                margin-left: 25px;
+                height: 70px;
+            }
+            &--info {
+                height: 15px;
+                margin-bottom: 0px;
+                margin-top: 10px;
+            }
+            &--ville {
+                font-size: 17px;
+                font-weight: 100;
+                height: 15px;
+                margin-top: 15px;
+            }
+            &--coeur {
+                cursor: grab;
+                &:hover .nav_main--coeurplein {
+                    animation: efface 0.5s linear forwards;
+                    opacity: 1;
+                }
+                &:hover .nav_main--coeurplein {
+                    animation: grandi-bat 1.8s linear forwards;
+                    opacity: 1;
+                }
+            }
+            &--coeurvide {
+                @include coeur;
+            }
+            &--coeurplein {
+                @include coeur;
+                background-image: linear-gradient(200deg, $pink, $violet);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                opacity: 0;
+                transform: scale(1.3);
+            }   
+    }
+}

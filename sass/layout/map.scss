@@ -1,0 +1,16 @@
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e7e7;
+    height: 60px;
+    width: 100%;
+    box-shadow: inset 0px 3px 3px #b4b4b4; /* marge dans la box avec inset */
+    &_fas {
+        margin-right: 15px;
+    }
+    
+    &_texte {
+        font-weight: 500;
+    }
+}
