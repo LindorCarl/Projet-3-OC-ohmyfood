@@ -29,4 +29,10 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
 
 ## Technologies
 1. Autorisées : HTML, CSS, préprocesseur CSS (ex: Sass)
-2. Interdites : JavaScript, inline CSS
+2. Interdites : JavaScript, inline CSS  
+
+__Identité graphique__
+Polices :
+
+Logo et titres : Shrikhand
+Texte : Roboto
