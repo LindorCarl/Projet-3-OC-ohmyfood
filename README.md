@@ -42,4 +42,11 @@ Couleurs :
 
 * Primaire: #9356DC
 * Secondaire: #FF79DA
-* Tertiaire: #99E2D0
+* Tertiaire: #99E2D0  
+
+## Compatibilité
+Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant pas prioritaires, leur mise en page est libre.
+
+* L’ensemble du site devra être responsive sur mobile, tablette et desktop.
+* Les pages devront passer la validation W3C en HTML et CSS sans erreurs.
+* Le site doit être parfaitement compatible avec les dernières versions desktop de Chrome et Firefox.
