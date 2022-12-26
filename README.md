@@ -9,4 +9,7 @@ __Compétences évaluées :__
 1. Développer un site proposant le menu de 4 grands restaurants parisiens.
 2. Permettre la réservation en ligne et la composition de menus.  
 
-## Livrables
+## Livrables    
+Pages à intégrer :
+Pages d'accueil
+Pages de menu (4 au total)
