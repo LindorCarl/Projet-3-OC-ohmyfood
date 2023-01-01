@@ -26,7 +26,7 @@ html, body {
   background-color: #e7e7e7;
   height: 60px;
   width: 100%;
-  box-shadow: inset 0px 3px 3px #b4b4b4; /* marge dans la box avec inset */
+  box-shadow: inset 0px 3px 3px #b4b4b4; 
 }
 .map_fas {
   margin-right: 15px;
@@ -49,7 +49,7 @@ html, body {
   }
 }
 .restaurant_main {
-  display: inline-block; /* cette commande m'a évité d'avoir des marges au dessus */
+  display: inline-block;
   width: 100%;
 }
 .restaurant_menu {
@@ -81,7 +81,7 @@ html, body {
 .restaurant_bouton--couleur:hover {
   cursor: pointer;
   opacity: 0.8;
-  animation: mou 0.7s ease-in-out 0.05s 1 forwards; /* on peut garder que le name et duration */
+  animation: mou 0.7s ease-in-out 0.05s 1 forwards;
 }
 
 /* ANIMATION LOAD */
